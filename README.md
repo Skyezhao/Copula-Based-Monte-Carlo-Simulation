@@ -2,7 +2,7 @@
 
 Copula-based Monte Carlo simulation is often considered more accurate than a simple Monte Carlo simulation, especially when modeling complex dependencies between multiple variables. The key reasons why it provides improved accuracy are:
 
-1. Better Dependency Modeling
+# 1. Better Dependency Modeling
 Simple Monte Carlo Simulation:
 
 Assumes independence or uses linear correlation (e.g., Pearson correlation), which may not capture the true relationship between variables.
@@ -14,7 +14,7 @@ It separates the marginal distributions (individual variable behavior) from the 
 Example:
 In financial markets, asset returns often show strong tail dependencies during market downturns, which simple Monte Carlo simulations fail to capture. A copula-based approach can better model these extreme events.
 
-2. Tail Dependency Capture
+# 2. Tail Dependency Capture
 Simple Monte Carlo Simulation:
 
 Often assumes joint normality or uses basic correlation structures, ignoring extreme co-movements (e.g., in financial crises).
@@ -25,7 +25,7 @@ Certain copulas, such as the t-copula or Clayton copula, are better suited to mo
 Why It Matters:
 In risk management (e.g., portfolio Value at Risk (VaR)), correctly capturing tail dependencies ensures robust capital allocation and stress testing.
 
-3. Flexibility in Marginal Distributions
+# 3. Flexibility in Marginal Distributions
 Simple Monte Carlo Simulation:
 
 Assumes the same distribution for all variables (often normal or uniform), which may not reflect real-world distributions accurately.
@@ -35,7 +35,7 @@ Allows each variable to have its own marginal distribution (e.g., normal, log-no
 Example:
 In an insurance portfolio, claims might follow a heavy-tailed distribution (e.g., Pareto), whereas interest rates might follow a normal distribution. A copula-based approach accounts for these differences more accurately.
 
-4. Preserving Rank Correlations
+# 4. Preserving Rank Correlations
 Simple Monte Carlo Simulation:
 
 Uses Pearson correlation, which only captures linear relationships and can be misleading when dealing with non-linear dependencies.
@@ -45,7 +45,7 @@ Models dependency structures based on rank correlation metrics such as Spearman'
 Why It Matters:
 Rank correlation is more robust in cases where variables do not have a simple linear relationship but are still strongly dependent.
 
-5. Improved Scenario Generation
+# 5. Improved Scenario Generation
 Simple Monte Carlo Simulation:
 
 Generates independent scenarios that may fail to reflect realistic joint behaviors of variables.
@@ -55,7 +55,7 @@ Ensures that simulated scenarios reflect observed dependencies and co-movements,
 Example:
 In credit risk modeling, multiple defaults often happen together in times of economic downturn, which copula-based methods capture better.
 
-6. Better Risk Aggregation
+# 6. Better Risk Aggregation
 Simple Monte Carlo Simulation:
 
 Might underestimate or overestimate total portfolio risk due to incorrect dependency assumptions.
@@ -65,7 +65,7 @@ Provides more accurate risk aggregation by simulating correlated risk factors ap
 Why It Matters:
 In enterprise risk management, aggregating risks from various sources (e.g., credit risk, market risk, operational risk) requires accurate dependency modeling.
 
-7. Application in High-Dimensional Problems
+# 7. Application in High-Dimensional Problems
 Simple Monte Carlo Simulation:
 
 Can struggle with high-dimensional data due to oversimplified correlation structures.
